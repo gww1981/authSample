@@ -21,7 +21,11 @@ namespace mvcCookieAuthSample
 
         public static IEnumerable<ApiResource> GetResources()
         {
-            return new List<ApiResource> { new ApiResource("api1", "API Application"), new ApiResource("api2", "API2 Application") };
+            return new List<ApiResource> {
+                new ApiResource("api1", "API1 Application"),
+                new ApiResource("api2", "API2 Application"),
+                new ApiResource("api3", "API3 Application")
+            };
         }
 
         public static List<TestUser> GetTestUsers()
